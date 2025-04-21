@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Blueprint Generator</h1>
+        <p>Desarrollado por Eduardo Núñez</p>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Herramientas</h2>
+            <div class="tools">
+                <button id="wall-tool" class="tool-btn active">Pared</button>
+                <button id="door-tool" class="tool-btn">Puerta</button>
+                <button id="sliding-door-tool" class="tool-btn">P. Corrediza</button>
+                <button id="window-tool" class="tool-btn">Ventana</button>
+                <button id="skylight-tool" class="tool-btn">Tragaluz</button>
+                <button id="column-tool" class="tool-btn">Columna</button>
+                <button id="stairs-up-tool" class="tool-btn">Escalera ↑</button>
+                <button id="stairs-down-tool" class="tool-btn">Escalera ↓</button>
+                <button id="single-step-tool" class="tool-btn">Escalón</button>
+                <button id="ramp-tool" class="tool-btn">Rampa</button>
+                <button id="furniture-tool" class="tool-btn">Mueble</button>
+                <button id="select-tool" class="tool-btn">Seleccionar</button>
+                <button id="delete-tool" class="tool-btn">Borrar</button>
+            </div>
+            <div class="properties-panel">
+                <h3>Propiedades</h3>
+                <div id="properties-content">
+                    <p>Selecciona un elemento para ver sus propiedades</p>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="save-btn">Guardar</button>
+                <button id="load-btn">Cargar</button>
+                <button id="export-btn">Exportar</button>
+                <button id="clear-btn">Limpiar Todo</button>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <div class="canvas-controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+                <span id="grid-size-display">Grid: 20px</span>
+                <label>
+                    <input type="checkbox" id="grid-snap" checked>
+                    Ajustar a cuadrícula
+                </label>
+            </div>
+            <canvas id="blueprint-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
